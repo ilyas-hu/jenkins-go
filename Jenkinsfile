@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'go test ./..'
+        sh 'XDG_CACHE_HOME=/tmp/.cache go test ./..'
       }
     }
 
